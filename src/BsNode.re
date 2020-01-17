@@ -1,4 +1,4 @@
-(* Copyright (C) 2015-2016 Bloomberg Finance L.P.
+/* Copyright (C) 2015-2016 Bloomberg Finance L.P.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -20,8 +20,15 @@
  * 
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA. *)
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA. */
 
-type t
-
-external module_ : < __cache : t Js.Dict.t > Js.t = "module" [@@bs.val]
+module Buffer = BsNode_Buffer
+module ChildProcess = BsNode_ChildProcess
+module Fs = BsNode_Fs
+module Global = BsNode_Global
+module Module =  BsNode_Module
+module Options = BsNode_Options
+module Path = BsNode_Path
+module Process = BsNode_Process
+module StringBuffer = BsNode_StringBuffer
+module Crypto = BsNode_Crypto
